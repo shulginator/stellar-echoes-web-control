@@ -2,12 +2,12 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>STM32 Web Control</title>
+<title>Stellar Echoes Control Room</title>
 
 <!-- ===== CSS ===== -->
 <style>
 body {
-    font-family: roboto;
+    font-family: sans-serif;
     padding: 20px;
 }
 
@@ -36,19 +36,19 @@ body {
 
 <!-- ===== PARAMETERS ===== -->
 
-<div class="param" data-name="time" data-min="0" data-max="1000" data-step="1">
+<div class="param" data-name="time" data-min="200" data-max="1000" data-step="1">
   <label>Time</label><br>
   <input type="range" class="slider">
   <input type="number" class="number">
 </div>
 
-<div class="param" data-name="mix" data-min="0" data-max="100" data-step="1">
+<div class="param" data-name="mix" data-min="0.0" data-max="1.0" data-step="0.01">
   <label>Mix</label><br>
   <input type="range" class="slider">
   <input type="number" class="number">
 </div>
 
-<div class="param" data-name="feedback" data-min="0" data-max="0.95" data-step="0.01">
+<div class="param" data-name="regen" data-min="0.0" data-max="1.0" data-step="0.01">
   <label>Feedback</label><br>
   <input type="range" class="slider">
   <input type="number" class="number">
@@ -103,3 +103,4 @@ document.querySelectorAll(".param").forEach(param => {
 
 </body>
 </html>
+
